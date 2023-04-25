@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle login form submission here
+  };
+
   return (
     <div>
       <h1>Login Page</h1>
-      <p>This page will allow users to log in to the app.</p>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Email:
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        </label>
+        <br />
+        <label>
+          Password:
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+        </label>
+        <br />
+        <button type="submit">Log In</button>
+      </form>
     </div>
   );
 }
 
 export default Login;
+
