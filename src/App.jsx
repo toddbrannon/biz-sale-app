@@ -5,7 +5,7 @@ import Body from './components/Body';
 import Home from './pages/Home';
 import Listings from './pages/Listings';
 import Login from './pages/Login';
-import Signup from './pages/Signup';
+import Signup from './pages/SignUp';
 import './styles.css';
 
 
