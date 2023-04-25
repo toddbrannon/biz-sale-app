@@ -7,7 +7,7 @@ function Header() {
     <nav className="navbar">
       <div className="navbar-brand">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        My Website
+        Brand | Logo
       </div>
       <ul className="navbar-nav">
         <li className="nav-item">
