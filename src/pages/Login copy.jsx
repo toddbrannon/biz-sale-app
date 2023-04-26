@@ -1,38 +1,33 @@
 import React, { useState } from 'react';
 
-function SignUp() {
-  const [name, setName] = useState('');
+function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle signup form submission here
+    // Handle login form submission here
   };
 
   return (
     <div className='form-container'>
-      <h1>SignUp Page</h1>
+      <h1>Login Page</h1>
       <form onSubmit={handleSubmit}>
-        <label className='form-input'>
-          Name:
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
-        </label>
-        <br />
-        <label className='form-input'>
+        <label>
           Email:
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </label>
         <br />
-        <label className='form-input'>
+        <label>
           Password:
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </label>
         <br />
-        <button type="submit" className='form-submit'>Sign Up</button>
+        <button type="submit">Log In</button>
       </form>
     </div>
   );
 }
 
-export default SignUp;
+export default Login;
+

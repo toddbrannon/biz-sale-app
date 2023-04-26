@@ -17,10 +17,10 @@ function Header() {
           <Link to="/listings" className="nav-link">Listings</Link>
         </li>
         <li className="nav-item">
-          <Link to="/login" className="nav-link">Login</Link>
+          <Link to="https://biz-sale-app-regauth.onrender.com/login" className="nav-link">Login</Link>
         </li>
         <li className="nav-item">
-          <Link to="/signup" className="nav-link">Signup</Link>
+          <Link to="https://biz-sale-app-regauth.onrender.com/register-free" className="nav-link">Signup</Link>
         </li>
       </ul>
     </nav>
