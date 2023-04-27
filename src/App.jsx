@@ -1,19 +1,38 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Body from './components/Body';
 import Home from './pages/Home';
 import Listings from './pages/Listings';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import { Header, Body, Button, About, CTA, Footer, HowItWorks, SuccessStories, Testimonials } from './components';
+// import Navbar from './components/Navbar';
 import './styles.css';
+import styles from './style'
 
 
-function App() {
-  return (
+const App = () => (
     <Router>
-      <div className="App">
-        <Header />
+      <div className="bg-primary w-full overflow-hidden">
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Header />
+          </div>
+        </div>
+        
+        <div className={`bg-primary ${styles.flexStart}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Hero />
+          </div>
+        </div>
+        <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+          <div className={`${styles.boxWidth}`}>
+            <About />
+            <HowItWorks />
+            <SuccessStories />
+            <Testimonials />
+            <Footer />
+          </div>
+        </div>
         <Body />
         <Routes>
           <Route exact path="/" element={<Home/>} />
@@ -24,6 +43,5 @@ function App() {
       </div>
     </Router>
   );
-}
 
 export default App;
