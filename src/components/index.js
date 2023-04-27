@@ -1,5 +1,4 @@
 import About from './About';
-import Home from './Home';
 import Body from './Body';
 import Button from './Button';
 import CTA from './CTA';
@@ -11,7 +10,6 @@ import Footer from './Footer';
 
 export {
     About,
-    Home,
     Body,
     Button,
     CTA,
